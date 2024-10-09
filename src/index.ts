@@ -1,4 +1,3 @@
-// src/index.ts
 import express from 'express';
 import { PrismaClient } from '@prisma/client';
 import bcrypt from 'bcrypt';
@@ -27,7 +26,6 @@ app.listen(3000, () => {
   console.log('Server is running on port 3000');
 });
 
-// src/index.ts
 app.post('/products', async (req, res) => {
   const { name, description, price, stock } = req.body;
   const product = await prisma.product.create({
@@ -62,4 +60,15 @@ app.delete('/products/:id', async (req, res) => {
     where: { id: Number(id) },
   });
   res.json({ message: 'Product deleted' });
+});
+
+app.post('/orders', async (req, res) => {
+  const { userId, products } = req.body;
+  const order = await prisma.order.create({
+    data: {
+      userId,
+      products,
+    },
+  });
+  res.json(order);
 });
