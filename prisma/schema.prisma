@@ -24,3 +24,10 @@ model Product {
   stock       Int
   createdAt   DateTime @default(now())
 }
+
+model Order {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  products  Json
+  createdAt DateTime @default(now())
+}
