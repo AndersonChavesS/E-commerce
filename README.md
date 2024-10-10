@@ -139,8 +139,3 @@ Este é o backend de um sistema de e-commerce simplificado. O sistema permite qu
 - Método: `DELETE`
 - URL: `http://localhost:3000/products/1`
     (Substitua `1` pelo ID do Produto)
-### Contato
-Se você tiver alguma dúvida, sinta-se à vontade para entrar em contato
-
-[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anderson-chaves-1b0a79265/)
-[![whatsap](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5593991931335)
