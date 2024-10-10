@@ -125,14 +125,14 @@ Este é o backend de um sistema de e-commerce simplificado. O sistema permite qu
 - URL: `http://localhost:3000/products/1`
   (Substitua `1` pelo ID do produto)
 - Corpo(JSON):
-  `bash
+  ```bash
   {
   "name": "Updated Product 1",
   "description": "Updated Description of Product 1",
   "price": 150.0,
   "stock": 5
   }
-  `
+  ```
 
 ### Remoção de Produto
 
